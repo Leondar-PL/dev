@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07100a">
+    <meta name="description" content="VPLN SHOP - sklep serwera Minecraft">
+    <title>VPLN SHOP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+
+    <!-- ANNOUNCEMENT -->
+    <div class="announcement">
+        ✦ VPLN SHOP • 1 VPLN = 1 zł • ⚡ SZYBKA REALIZACJA
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+    <img src="./images/vpln-logo.png" alt="VPLN SHOP">
+</a>
+
+        <div class="nav-links">
+            <a href="#vpln">VPLN</a>
+            <a href="#jak-kupic">JAK KUPIĆ</a>
+            <a href="#discord">DISCORD</a>
+        </div>
+
+        <div class="server-status">
+            <span></span> ONLINE
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-eyebrow">
+                    ✦ SKLEP SERWERA MINECRAFT ✦
+                </div>
+
+                <h1>
+                    ⚡ VPLN <span>SHOP</span>
+                </h1>
+
+                <p>
+                    Kup VPLN na naszym serwerze Minecraft.
+                    Szybko, prosto i bez zbędnych komplikacji.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#vpln" class="button button-primary">
+                        ✦ KUP VPLN
+                    </a>
+
+                    <button
+                        class="button button-secondary"
+                        onclick="copyServerIP()">
+                        KOPIUJ IP
+                    </button>
+
+                </div>
+
+                <div class="hero-ip">
+                    IP:
+                    <span id="serverIp">mc.twojserwer.pl</span>
+                </div>
+
+            </div>
+
+            <!-- CHARACTER -->
+            <div class="hero-character">
+    <img src="./images/ziomek1.jpg" alt="Postać Minecraft" class="hero-character-image">
+         </div>
+
+        </section>
+<div class="middle-character">
+    <img src="./images/zioemk3.jpg" alt="Postać Minecraft">
+</div>
+
+        <!-- VPLN -->
+        <section class="section" id="vpln">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    WALUTA SERWERA
+                </div>
+
+                <h2>✦ ◆ KUP VPLN ◆ ✦</h2>
+
+                <p>
+                    Wybierz gotowy pakiet VPLN.
+                    1 VPLN kosztuje dokładnie 1 zł.
+                </p>
+
+            </div>
+
+
+            <div class="products-grid">
+
+                <!-- 10 -->
+                <div class="product-card">
+
+                    <div class="product-icon">◆</div>
+
+                    <h3>10 VPLN</h3>
+
+                    <p>Pakiet 10 VPLN</p>
+
+                    <div class="product-price">
+                        10 zł
+                    </div>
+
+                    <button
+                        class="button button-primary"
+                        onclick="buyVpln(10)">
+                        KUP 10 VPLN
+                    </button>
+
+                </div>
+
+
+                <!-- 20 -->
+                <div class="product-card">
+
+                    <div class="product-icon">◇</div>
+
+                    <h3>20 VPLN</h3>
+
+                    <p>Pakiet 20 VPLN</p>
+
+                    <div class="product-price">
+                        20 zł
+                    </div>
+
+                    <button
+                        class="button button-primary"
+                        onclick="buyVpln(20)">
+                        KUP 20 VPLN
+                    </button>
+
+                </div>
+
+
+                <!-- 30 -->
+                <div class="product-card">
+
+                    <div class="product-icon">✦</div>
+
+                    <h3>30 VPLN</h3>
+
+                    <p>Pakiet 30 VPLN</p>
+
+                    <div class="product-price">
+                        30 zł
+                    </div>
+
+                    <button
+                        class="button button-primary"
+                        onclick="buyVpln(30)">
+                        KUP 30 VPLN
+                    </button>
+
+                </div>
+
+
+                <!-- 50 -->
+                <div class="product-card popular">
+
+                    <div class="popular-badge">
+                        NAJPOPULARNIEJSZY
+                    </div>
+
+                    <div class="product-icon">✪</div>
+
+                    <h3>50 VPLN</h3>
+
+                    <p>Pakiet 50 VPLN</p>
+
+                    <div class="product-price">
+                        50 zł
+                    </div>
+
+                    <button
+                        class="button button-primary"
+                        onclick="buyVpln(50)">
+                        KUP 50 VPLN
+                    </button>
+
+                </div>
+
+
+                <!-- 75 -->
+                <div class="product-card">
+
+                    <div class="product-icon">◈</div>
+
+                    <h3>75 VPLN</h3>
+
+                    <p>Pakiet 75 VPLN</p>
+
+                    <div class="product-price">
+                        75 zł
+                    </div>
+
+                    <button
+                        class="button button-primary"
+                        onclick="buyVpln(75)">
+                        KUP 75 VPLN
+                    </button>
+
+                </div>
+
+
+                <!-- 100 -->
+                <div class="product-card">
+
+                    <div class="product-icon">♛</div>
+
+                    <h3>100 VPLN</h3>
+
+                    <p>Pakiet 100 VPLN</p>
+
+                    <div class="product-price">
+                        100 zł
+                    </div>
+
+                    <button
+                        class="button button-primary"
+                        onclick="buyVpln(100)">
+                        KUP 100 VPLN
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUSTOM -->
+            <div class="custom-box">
+
+                <div class="custom-text">
+
+                    <strong>
+                        ✦ Własna ilość VPLN
+                    </strong>
+
+                    <p>
+                        Wpisz dowolną liczbę VPLN.
+                        Ta opcja nie ma limitu do 100 zł.
+                    </p>
+
+                </div>
+
+                <div class="custom-form">
+
+                    <input
+                        id="customAmount"
+                        type="number"
+                        min="1"
+                        placeholder="VPLN">
+
+                    <button
+                        class="button button-primary"
+                        onclick="buyCustom()">
+                        KUP
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BENEFITS -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    DLACZEGO MY?
+                </div>
+
+                <h2>PROSTY SKLEP</h2>
+
+            </div>
+
+
+            <div class="benefits-grid">
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ⚡
+                    </div>
+
+                    <h3>SZYBKO</h3>
+
+                    <p>
+                        Zamówienie jest tworzone automatycznie.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ◆
+                    </div>
+
+                    <h3>VPLN</h3>
+
+                    <p>
+                        Kupujesz dokładnie tyle waluty,
+                        ile potrzebujesz.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        🛡
+                    </div>
+
+                    <h3>BEZPIECZNIE</h3>
+
+                    <p>
+                        Płatność odbywa się przez operatora płatności.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW TO BUY -->
+        <section class="section" id="jak-kupic">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    INSTRUKCJA
+                </div>
+
+                <h2>⚡━━━ JAK KUPIĆ? ━━━⚡</h2>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div>
+                        <h3>WYBIERZ PRODUKT</h3>
+
+                        <p>
+                            Wybierz odpowiedni pakiet VPLN.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div>
+                        <h3>WPISZ NICK</h3>
+
+                        <p>
+                            Podaj swój nick Minecraft.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div>
+                        <h3>WYBIERZ PŁATNOŚĆ</h3>
+
+                        <p>
+                            Wybierz dostępny sposób płatności.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <div>
+                        <h3>GOTOWE</h3>
+
+                        <p>
+                            Po płatności zamówienie zostanie zrealizowane.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DISCORD -->
+        <section class="discord-section" id="discord">
+
+            <div class="discord-icon">
+                ✦
+            </div>
+
+            <h2>
+                ✦「 DOŁĄCZ NA DISCORDA 」✦
+            </h2>
+
+            <p>
+                Dołącz do naszej społeczności Minecraft,
+                poznaj innych graczy i dowiedz się więcej o serwerze.
+            </p>
+
+            <a
+                id="discordJoinButton"
+                class="button button-primary"
+                href="#"
+                target="_blank"
+                rel="noopener">
+                DOŁĄCZ NA DISCORD
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- PURCHASE MODAL -->
+    <div
+        id="purchaseModal"
+        class="modal"
+        aria-hidden="true">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-x"
+                onclick="closePurchaseModal()"
+                aria-label="Zamknij">
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ✦
+            </div>
+
+            <h2 id="productTitle">
+                Produkt
+            </h2>
+
+            <p id="productDescription">
+                Opis produktu.
+            </p>
+
+
+            <input
+                id="minecraftNick"
+                type="text"
+                maxlength="16"
+                placeholder="Twój nick Minecraft"
+                autocomplete="off">
+
+
+            <div class="modal-price">
+                Cena:
+                <strong>
+                    <span id="orderPrice">0</span> zł
+                </strong>
+            </div>
+
+
+            <div class="payment-methods">
+
+                <button onclick="selectPayment('BLIK')">
+                    BLIK
+                </button>
+
+                <button onclick="selectPayment('CARD')">
+                    KARTA
+                </button>
+
+                <button onclick="selectPayment('P24')">
+                    PRZELEWY24
+                </button>
+
+            </div>
+
+
+            <div id="modalMessage"></div>
+
+
+            <button
+                class="button button-secondary modal-close"
+                onclick="closePurchaseModal()">
+                ANULUJ
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOAST -->
+    <div id="toast" class="toast"></div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-inner">
+
+            <div>
+                © 2026 VPLN SHOP
+            </div>
+
+            <div class="footer-ip">
+                IP:
+                <span id="footerIp">
+                    mc.twojserwer.pl
+                </span>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <div id="lightning-layer"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
